@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Search Results - Text Ad Slideshow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="Bing Logo.png" alt="Bing Logo" class="logo-img">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="youtube">
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Section with Main Image -->
+            <div class="left-section">
+                <div class="main-image">
+                    <img src="Media Player.png" alt="YouTube Video">
+                </div>
+                <div class="video-info">
+                    <h3>What is YouTube? History of YouTube social media platform | Origin & Evolution of Youtube</h3>
+                    <p><strong>YouTube</strong> | Shani and Kriya | 502.2K views ⭘ May 10, 2020</p>
+                    <h4>Key moments in this video</h4>
+                    <div class="timestamps">
+                        <button>0:11 Introduction to YouTube</button>
+                        <button>8:34 Launch and Evolution</button>
+                        <button>12:8 Growth and Expansion</button>
+                        <button>28:7 Partnerships and Partnerships</button>
+                        <button>3:19 PewDiePie and Vlogging</button>
+                        <button>4:81 YouTube Li...</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section with Text Ads -->
+            <aside class="right-section">
+                <!-- Text Ad 1 - Slideshow -->
+                <div class="text-ad-container slideshow-container-1">
+                    <div class="slideshow-wrapper">
+                        <!-- Rotating Banner -->
+                        <div class="rotating-banner">
+                            <!-- Slide 1 -->
+                            <div class="slide fade active" id="slide1-1">
+                                <div class="ad-header">
+                                    <img src="Adobe logo.png" alt="Adobe Logo" class="seller-logo">
+                                    <h3 class="ad-title">AI Video Generator | Now Available in Adobe Firefly</h3>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="slide fade" id="slide1-2">
+                                <div class="ad-header">
+                                    <img src="Adobe logo.png" alt="Adobe Logo" class="seller-logo">
+                                    <h3 class="ad-title">Turn a Still Image Into a Video or Create a Clip With a Text Prompt..</h3>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="slide fade" id="slide1-3">
+                                <div class="ad-header">
+                                    <img src="Adobe logo.png" alt="Adobe Logo" class="seller-logo">
+                                    <h3 class="ad-title">Adobe | firefly.adobe.com/firefly/generate-video</h3>
+                                </div>
+                            </div>
+
+                            <!-- Dots -->
+                            <div class="dots-container">
+                                <span class="dot active" onclick="currentSlide(1, 'slideshow1')"></span>
+                                <span class="dot" onclick="currentSlide(2, 'slideshow1')"></span>
+                                <span class="dot" onclick="currentSlide(3, 'slideshow1')"></span>
+                            </div>
+                        </div>
+
+                        <!-- Static Content -->
+                        <div class="static-ad-content">
+                            <p class="ad-body">Turn a Still Image Into a Video or Create a Clip With a Text Prompt Using Generate Video. Turn Text or Images Into Videos, Then Translate Them Into Over 20 Languages. Try it Now.</p>
+                            <div class="ad-meta">
+                                <span class="ad-url">firefly.adobe.com/firefly/generate-video</span>
+                            </div>
+                            <div class="ad-buttons">
+                                <button class="ad-btn">Generate Video</button>
+                                <button class="ad-btn">AI Video Generator</button>
+                                <button class="ad-btn">Nano Banana</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Videos Section -->
+                <div class="related-videos-container">
+                    <h3>Related videos</h3>
+                    <div class="related-video">
+                        <img src="RC1.png" alt="View Watch History">
+                        <div class="video-details">
+                            <p class="video-title">How to View YouTube Watch History - Find Videos Watched on...</p>
+                            <p class="video-channel">YouTube · Gauging Gadgets</p>
+                            <p class="video-views">342.8K views · Oct 24, 2023</p>
+                        </div>
+                    </div>
+                    <div class="related-video">
+                        <img src="RC2.png" alt="What is YOUTUBE">
+                        <div class="video-details">
+                            <p class="video-title">What is YOUTUBE? Explained Simply #youtube #youtuber</p>
+                            <p class="video-channel">YouTube · Sijo Xavier</p>
+                            <p class="video-views">583 views · 11 months ago</p>
+                        </div>
+                    </div>
+                    <div class="related-video">
+                        <img src="RC3.png" alt="Create YouTube Channel">
+                        <div class="video-details">
+                            <p class="video-title">HOW TO CREATE A YOUTUBE CHANNEL?</p>
+                            <p class="video-channel">YouTube · INFORMATIVE SHORTS...</p>
+                            <p class="video-views">1.6M views · Aug 21, 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Ad 2 - Slideshow -->
+                <div class="text-ad-container slideshow-container-2">
+                    <div class="slideshow-wrapper">
+                        <!-- Rotating Banner -->
+                        <div class="rotating-banner">
+                            <!-- Slide 1 -->
+                            <div class="slide fade active" id="slide2-1">
+                                <div class="ad-header">
+                                    <img src="DV Logo.png" alt="Deevid Logo" class="seller-logo">
+                                    <h3 class="ad-title">Deevid - Video to Video | AI Video Creator Tool</h3>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="slide fade" id="slide2-2">
+                                <div class="ad-header">
+                                    <img src="DV Logo.png" alt="Deevid Logo" class="seller-logo">
+                                    <h3 class="ad-title">Create a video with ai. Create videos from text in seconds. Perfect for social media and ads.</h3>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="slide fade" id="slide2-3">
+                                <div class="ad-header">
+                                    <img src="DV Logo.png" alt="Deevid Logo" class="seller-logo">
+                                    <h3 class="ad-title">Deevid | deevid.ai</h3>
+                                </div>
+                            </div>
+
+                            <!-- Dots -->
+                            <div class="dots-container">
+                                <span class="dot active" onclick="currentSlide(1, 'slideshow2')"></span>
+                                <span class="dot" onclick="currentSlide(2, 'slideshow2')"></span>
+                                <span class="dot" onclick="currentSlide(3, 'slideshow2')"></span>
+                            </div>
+                        </div>
+
+                        <!-- Static Content -->
+                        <div class="static-ad-content">
+                            <p class="ad-body">Create a video with ai. Create videos from text in seconds. Perfect for social media content, ads, and marketing. Generate videos effortlessly with AI. Save time and boost your content.</p>
+                            <div class="ad-meta">
+                                <span class="ad-url">deevid.ai</span>
+                            </div>
+                            <div class="ad-buttons">
+                                <button class="ad-btn">AI Video Generator</button>
+                                <button class="ad-btn">Text to Video</button>
+                                <button class="ad-btn">AI Jesus Hug Effs</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
